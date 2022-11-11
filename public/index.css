@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(150deg, #74cff4, #d161ff);
+}
+
+.header {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 8%;
+  left: 50%;
+}
+.header h1 {
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+}
+.wrapper .container {
+  width: 65vmin;
+  height: 65vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+.wrapper .container .button-option {
+  background: #ffffff;
+  height: 20vmin;
+  width: 20vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #d161ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.wrapper .container .button-option:hover {
+  background: #f1dff7;
+  cursor: pointer;
+}
+.wrapper .score {
+  display: flex;
+  justify-content: center;
+  gap: 2vmin;
+  margin-top: 1.5em;
+}
+.wrapper .score h3 {
+  font-size: 25px;
+  color: black;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+.wrapper #restart {
+  margin-top: 1.5em;
+  font-size: 1.3em;
+  padding: 0.7em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
+  box-shadow: 0px 6px 0px #2b195f, 0px 8px 20px #222222;
+  cursor: pointer;
+}
+
+.popup {
+  background: linear-gradient(150deg, #74cff4, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+.popup #message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+.popup #new-game {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.2em;
+  box-shadow: 0px 6px 0px #2b195f, 0px 8px 20px #222222;
+  cursor: pointer;
+}
+
+.popup.hide {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
